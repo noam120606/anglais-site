@@ -1,11 +1,10 @@
-import './App.css'
 import Header from './partials/Header'
 import Footer from './partials/Footer'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Roster from './sections/Roster'
 import Gameplay from './sections/Gameplay'
-import CallToAction from './sections/CallToAction'
+import Reviews from './sections/Reviews'
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         <About />
         <Roster />
         <Gameplay />
-        <CallToAction />
+        <Reviews />
       </main>
       <Footer />
     </div>

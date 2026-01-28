@@ -9,7 +9,7 @@ const links = [
   { href: '#about', label: 'Universe' },
   { href: '#roster', label: 'Yokai' },
   { href: '#gameplay', label: 'Gameplay' },
-  { href: '#cta', label: 'Pitch' }
+  { href: '#reviews', label: 'Reviews' },
 ]
 
 export default function Header() {
@@ -26,11 +26,11 @@ export default function Header() {
     <header className="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-red-500 text-slate-950 font-black">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-slate-950 font-black">
             <img src="/img/logo-small.png" alt="Yo-Kai Watch Logo" />
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-amber-300">Yokai Watch</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400">Yokai Watch</p>
             <p className="text-sm text-slate-200">Fan landing for uni project</p>
           </div>
         </div>
@@ -40,19 +40,12 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="transition hover:text-amber-300"
+              className="transition hover:text-blue-400"
               onClick={(event) => handleNav(event, link.href)}
             >
               {link.label}
             </a>
           ))}
-          <a
-            href="#cta"
-            className="rounded-full bg-amber-400 px-4 py-2 text-slate-950 font-semibold shadow-lg shadow-amber-400/30 transition hover:shadow-amber-400/50"
-            onClick={(event) => handleNav(event, '#cta')}
-          >
-            Download PDF
-          </a>
         </nav>
 
         <button
@@ -71,7 +64,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-md px-2 py-2 transition hover:bg-slate-800 hover:text-amber-300"
+                className="rounded-md px-2 py-2 transition hover:bg-slate-800 hover:text-blue-400"
                 onClick={(event) => handleNav(event, link.href)}
               >
                 {link.label}
@@ -79,7 +72,7 @@ export default function Header() {
             ))}
             <a
               href="#cta"
-              className="rounded-md bg-amber-400 px-3 py-2 text-center text-slate-950 font-semibold"
+              className="rounded-md bg-blue-500 px-3 py-2 text-center text-white font-semibold"
               onClick={(event) => handleNav(event, '#cta')}
             >
               Download PDF
