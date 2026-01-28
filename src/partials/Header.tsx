@@ -2,8 +2,6 @@ import type React from 'react'
 import { useState } from 'react'
 import { smoothScrollTo } from '../lib/smoothScroll'
 
-
-
 const links = [
   { href: '#hero', label: 'Intro' },
   { href: '#about', label: 'Universe' },

@@ -1,13 +1,4 @@
-import type React from 'react'
-import { smoothScrollTo } from '../lib/smoothScroll'
-
 export default function Hero() {
-	const handleNav = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-		event.preventDefault()
-		const id = href.replace('#', '')
-		smoothScrollTo(id, 500)
-	}
-
 	return (
 		<section
 			id="hero"
