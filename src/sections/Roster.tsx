@@ -17,7 +17,7 @@ const characters: CharacterCardProps[] = [
   {
     name: 'Whisper',
     role: 'Guide and comic mentor',
-    hook: 'Explains the watch and yokai etiquette. Note the humor used to teach lore.',
+    hook: '^Freaky Yokai, Explains the watch and yokai etiquette. Note the humor used to teach lore.',
     tag: 'Slippery Tribe',
     imageUrl: '/img/characters/whisper.webp'
   },
@@ -67,9 +67,6 @@ export default function Roster() {
         <div className="flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.25em] text-blue-400">Characters</p>
           <h2 className="text-3xl font-black text-slate-50 sm:text-4xl">Introduce 3 key yokai</h2>
-          <p className="max-w-3xl text-slate-300">
-            Keep it short: who they are, why they matter for the story, and what cultural idea each yokai represents. Replace the cards with your own picks.
-          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {characters.map((character) => (

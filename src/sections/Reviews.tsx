@@ -11,21 +11,21 @@ const reviews: ReviewCardProps[] = [
     name: 'Alex Thompson',
     role: 'Gaming Enthusiast',
     rating: 5,
-    comment: 'Replace this with your own review text. Mention what makes this franchise stand out.',
+    comment: 'Yo-kai Watch brings a refreshing twist to the monster-collecting genre with its Japanese folklore charm and everyday adventures.',
     avatar: '🎮'
   },
   {
     name: 'Sarah Chen',
     role: 'Anime Fan',
     rating: 4,
-    comment: 'Add your thoughts here. Discuss the cultural elements and storytelling approach.',
+    comment: 'The game successfully blends traditional yokai mythology with modern storytelling. Perfect for fans interested in Japanese culture.',
     avatar: '🎌'
   },
   {
     name: 'Mike Rodriguez',
     role: 'RPG Player',
     rating: 3,
-    comment: 'Write your review commentary. Talk about gameplay mechanics and player engagement.',
+    comment: 'While the collection system is engaging, the battle mechanics feel less strategic compared to similar titles in the genre.',
     avatar: '⚔️'
   }
 ]
@@ -75,9 +75,6 @@ export default function Reviews() {
         <div className="flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.25em] text-blue-400">Reviews</p>
           <h2 className="text-3xl font-black text-slate-50 sm:text-4xl">What players are saying</h2>
-          <p className="max-w-3xl text-slate-300">
-            Replace these review cards with your own feedback and testimonials. Each card includes a star rating system and customizable text.
-          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {reviews.map((review) => (

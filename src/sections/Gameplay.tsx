@@ -1,23 +1,23 @@
 const beats = [
   {
     title: 'Spot a yokai',
-    detail: 'Describe how the watch reveals hidden spirits. Useful for explaining the main mechanic.',
-    imgURL: "",
+    detail: 'The Yo-kai Watch device reveals invisible spirits hidden in everyday locations. This core mechanic encourages exploration and observation.',
+    imgURL: "/img/gameplay/spot_yokai.jpg",
   },
   {
     title: 'Befriend or battle',
-    detail: 'Outline the social approach versus combat. Compare to other monster-collecting games.',
-    imgURL: "",
+    detail: 'Players can choose to befriend Yo-kai through conversation or engage them in strategic battles.',
+    imgURL: "/img/gameplay/yokai_watch_heart.jpg",
   },
   {
     title: 'Fuse, evolve, trade',
-    detail: 'Show how progress works and why collection stays engaging across episodes.',
-    imgURL: "",
+    detail: 'Yo-kai can evolve, fuse together, or be traded with friends to expand your collection.',
+    imgURL: "/img/gameplay/yokai_watch_fusion.webp",
   },
   {
     title: 'Daily quests',
-    detail: 'Mention side stories in town that keep the world feeling alive.',
-    imgURL: "",
+    detail: 'Side quests and town events create a living world beyond the main story.',
+    imgURL: "/img/gameplay/yokai_watch_quests.jpg",
   }
 ]
 
@@ -28,9 +28,6 @@ export default function Gameplay() {
         <div className="flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.25em] text-blue-400">Gameplay loop</p>
           <h2 className="text-3xl font-black text-slate-50 sm:text-4xl">Explain how players engage</h2>
-          <p className="max-w-3xl text-slate-300">
-            Each beat is ready to be swapped with your English notes: mechanics, player motivation, and where you can cite sources.
-          </p>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {beats.map((beat) => (
@@ -39,9 +36,9 @@ export default function Gameplay() {
               className="flex flex-col gap-2 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg shadow-slate-900/60"
             >
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-400/50 bg-blue-400/10 text-sm font-bold text-blue-300">
-                  <img src={beat.imgURL} alt={beat.title} />
-                </span>
+                <div className="shrink-0">
+                  <img src={beat.imgURL} alt={beat.title} className="h-10 w-10 rounded-full object-cover border border-blue-400/50" />
+                </div>
                 <div>
                   <p className="text-lg font-semibold text-slate-50">{beat.title}</p>
                   <p className="text-sm text-slate-400">{beat.detail}</p>
