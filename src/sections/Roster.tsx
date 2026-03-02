@@ -10,7 +10,7 @@ const characters: CharacterCardProps[] = [
   {
     name: 'Jibanyan',
     role: 'Mascot cat yokai',
-    hook: 'Comic relief with loyalty themes. Swap this for your own English summary.',
+    hook: 'Jibanyan is a charming red cat yokai who adores chocolate bars and bravely fights to prove he\'s not just an ordinary cat.',
     tag: 'Charming Tribe',
     imageUrl: '/img/characters/jibanyan.webp'
   },
@@ -72,7 +72,7 @@ export default function Roster() {
           <CharacterCard key="nate" {...{
             name: 'Nate',
             role: 'The Protagonist',
-            hook: 'Nathan Adams is a curious boy who solves problems with the help of Yo-kai.',
+            hook: 'Nate Adams is a curious boy who solves problems with the help of Yo-kai.',
             tag: 'Player',
             imageUrl: '/img/characters/nate.webp'
           }} />
