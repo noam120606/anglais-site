@@ -4,6 +4,8 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Roster from './sections/Roster'
 import Gameplay from './sections/Gameplay'
+import Trailer from './sections/Trailer'
+import Spinoff from './sections/Spinoff'
 import Reviews from './sections/Reviews'
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Hero />
         <About />
         <Roster />
+        <Trailer />
         <Gameplay />
+        <Spinoff />
         <Reviews />
       </main>
       <Footer />

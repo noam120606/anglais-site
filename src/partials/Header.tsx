@@ -6,7 +6,9 @@ const links = [
   { href: '#hero', label: 'Intro' },
   { href: '#about', label: 'Universe' },
   { href: '#roster', label: 'Yokai' },
+  { href: '#trailer', label: 'Trailer' },
   { href: '#gameplay', label: 'Gameplay' },
+  { href: '#spinoff', label: 'Spin-offs' },
   { href: '#reviews', label: 'Reviews' },
 ]
 
