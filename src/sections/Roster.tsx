@@ -17,7 +17,7 @@ const characters: CharacterCardProps[] = [
   {
     name: 'Whisper',
     role: 'Guide and comic mentor',
-    hook: '^Freaky Yokai, Explains the watch and yokai etiquette. Note the humor used to teach lore.',
+    hook: 'Freaky Yokai, Explains the watch and yokai etiquette. Note the humor used to teach lore.',
     tag: 'Slippery Tribe',
     imageUrl: '/img/characters/whisper.webp'
   },
@@ -66,6 +66,25 @@ export default function Roster() {
       <div className="mx-auto max-w-6xl px-4 space-y-8">
         <div className="flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.25em] text-blue-400">Characters</p>
+          <h2 className="text-3xl font-black text-slate-50 sm:text-4xl">Introduce 2 main characters</h2>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          <CharacterCard key="nate" {...{
+            name: 'Nate',
+            role: 'The Protagonist',
+            hook: 'Nathan Adams is a curious boy who solves problems with the help of Yo-kai.',
+            tag: 'Player',
+            imageUrl: '/img/characters/nate.webp'
+          }} />
+          <CharacterCard key="katie" {...{
+            name: 'Katie',
+            role: 'The Protagonist',
+            hook: 'Katie Forester is a kind and brave girl who uses her Yo-kai Watch to help others.',
+            tag: 'Player',
+            imageUrl: '/img/characters/katie.webp'
+          }} />
+        </div>
+        <div className="flex flex-col gap-3">
           <h2 className="text-3xl font-black text-slate-50 sm:text-4xl">Introduce 3 key yokai</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
