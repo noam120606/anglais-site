@@ -6,7 +6,7 @@ const spinoffs = [
   },
   {
     title: 'Yo-kai Watch 3',
-    detail: 'Yo-kai Watch 3 (2016) takes place after the events of the second game. The story is divided between two protagonists: Nate in Springdale and Hailey Anne in the new American-inspired city of BBQ. The game blends humor, mystery, and adventure, featuring aliens, treasure hunts, and new battle systems. It concludes the original trilogy with a much larger world and a more complex narrative, bringing together characters and themes from the previous games.',
+    detail: 'Yo-kai Watch 3 (2016) takes place after the events of the second game. The story is divided between two protagonists: Nate in Springdale and Hailey Anne in Japan. The game blends humor, mystery, and adventure, featuring aliens, treasure hunts, and new battle systems. It concludes the original trilogy with a much larger world and a more complex narrative, bringing together characters and themes from the previous games.',
     imgURL: "/img/spinoffs/yokai_watch_3.jpg",
   },
   {
